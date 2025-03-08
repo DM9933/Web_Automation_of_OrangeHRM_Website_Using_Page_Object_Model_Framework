@@ -26,7 +26,15 @@ The project is organized as follows:
 
 ### Directory Structure
 
-src/ |-- me/ |-- selenium/ |-- POM/ |-- basedrivers/ |-- pages/ |-- tests/ |-- utilities/
+```plaintext
+src/
+  |-- me/
+       |-- selenium/
+            |-- POM/
+                |-- basedrivers/
+                |-- pages/
+                |-- tests/
+                |-- utilities/
 
 
 ## Example Code Snippets
