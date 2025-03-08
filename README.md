@@ -205,6 +205,15 @@ public class ExtentFactory {
 ```
 [View ExtentFactory](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/src/test/java/me/selenium/POM/utilities/ExtentFactory.java)
 
+
+### Test Report 
+#### OrangeHRm - Login
+[Report 1](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/reports/OrangeHRM1.png)
+
+#### OrangeHRM - Add Employee
+[Report 2](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/reports/OrangeHRM2.png)
+
+
 ### Watch the Automation Test Video
 ![Watch the video](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/OrangeHRM_Automation.gif)
 
