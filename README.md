@@ -54,4 +54,84 @@ public class Login_Test {
         // Assert login success here
     }
 }
+### LoginPage.java
+package me.selenium.POM.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class LoginPage {
+    WebDriver driver;
+
+    By usernameField = By.id("txtUsername");
+    By passwordField = By.id("txtPassword");
+    By loginButton = By.id("btnLogin");
+
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void login(String username, String password) {
+        driver.findElement(usernameField).sendKeys(username);
+        driver.findElement(passwordField).sendKeys(password);
+        driver.findElement(loginButton).click();
+    }
+}
+
+### ExcelUtils.java
+package me.selenium.POM.utilities;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class ExcelUtils {
+    public static String username;
+    public static String password;
+
+    public void ReadExcel() throws IOException {
+        String excelFilePath = "./TestData/TestData.xlsx";
+        File file = new File(excelFilePath);
+        FileInputStream inputStream = new FileInputStream(file);
+        XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
+        XSSFSheet sheet = workbook.getSheetAt(0);
+        XSSFRow row = sheet.getRow(1);
+
+        XSSFCell cell = row.getCell(0);
+        username = cell.getStringCellValue();
+        cell = row.getCell(1);
+        password = cell.getStringCellValue();
+    }
+}
+### ExtentFactory.java
+package me.selenium.POM.utilities;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+public class ExtentFactory {
+    public static final ExtentReports extentReports = new ExtentReports();
+
+    public synchronized static ExtentReports getInstance() {
+        ExtentSparkReporter reporter = new ExtentSparkReporter("./reports/Report.html");
+        reporter.config().setReportName("Automation - Debarjun Mazumdar");
+        extentReports.attachReporter(reporter);
+        return extentReports;
+    }
+}
+
+
+
+
+
+
+
+
+
 
