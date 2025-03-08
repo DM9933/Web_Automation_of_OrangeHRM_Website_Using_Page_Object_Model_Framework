@@ -132,7 +132,7 @@ public class ExtentFactory {
         return extentReports;
     }
 }
-```java
+```
 
 
 
