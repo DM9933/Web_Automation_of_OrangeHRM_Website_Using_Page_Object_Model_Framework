@@ -63,7 +63,7 @@ public class Login_Test {
     }
 }
 ```
-[View Login_Test.java](https://github.com/yourusername/yourrepositoryname/blob/main/src/me/selenium/POM/tests/Login_Test.java)
+[View Login_Test.java](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/src/test/java/me/selenium/POM/tests/Login_Test.java)
 
 
 ### LoginPage.java
@@ -92,7 +92,7 @@ public class LoginPage {
     }
 }
 ```
-[View Login_Test.java](https://github.com/yourusername/yourrepositoryname/blob/main/src/me/selenium/POM/tests/Login_Test.java)
+[View Login_Page.java](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/src/test/java/me/selenium/POM/pages/Login_Page.java)
 
 
 
@@ -128,7 +128,7 @@ public class ExcelUtils {
     }
 }
 ```
-[View Login_Test.java](https://github.com/yourusername/yourrepositoryname/blob/main/src/me/selenium/POM/tests/Login_Test.java)
+[View ExcelUtils.java](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/src/test/java/me/selenium/POM/utilities/ExcelUtils.java)
 
 
 ### ExtentFactory.java
@@ -149,7 +149,7 @@ public class ExtentFactory {
     }
 }
 ```
-[View Login_Test.java](https://github.com/yourusername/yourrepositoryname/blob/main/src/me/selenium/POM/tests/Login_Test.java)
+[View ExtentFactory](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/src/test/java/me/selenium/POM/utilities/ExtentFactory.java)
 
 
 
