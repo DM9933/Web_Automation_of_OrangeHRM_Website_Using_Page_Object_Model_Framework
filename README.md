@@ -54,7 +54,7 @@ public class Login_Test {
         // Assert login success here
     }
 }
-```java
+
 ### LoginPage.java
 ```java
 package me.selenium.POM.pages;
@@ -80,7 +80,7 @@ public class LoginPage {
         driver.findElement(loginButton).click();
     }
 }
-```java
+
 
 ### ExcelUtils.java
 ```java
@@ -113,7 +113,7 @@ public class ExcelUtils {
         password = cell.getStringCellValue();
     }
 }
-```java
+
 ### ExtentFactory.java
 ```java
 package me.selenium.POM.utilities;
