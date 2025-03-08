@@ -54,7 +54,9 @@ public class Login_Test {
         // Assert login success here
     }
 }
+```java
 ### LoginPage.java
+```java
 package me.selenium.POM.pages;
 
 import org.openqa.selenium.By;
@@ -78,8 +80,10 @@ public class LoginPage {
         driver.findElement(loginButton).click();
     }
 }
+```java
 
 ### ExcelUtils.java
+```java
 package me.selenium.POM.utilities;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -109,7 +113,9 @@ public class ExcelUtils {
         password = cell.getStringCellValue();
     }
 }
+```java
 ### ExtentFactory.java
+```java
 package me.selenium.POM.utilities;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -125,6 +131,7 @@ public class ExtentFactory {
         return extentReports;
     }
 }
+```java
 
 
 
