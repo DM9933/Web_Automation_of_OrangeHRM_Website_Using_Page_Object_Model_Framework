@@ -35,7 +35,7 @@ src/
                 |-- pages/
                 |-- tests/
                 |-- utilities/
-
+```
 
 ## Example Code Snippets
 
