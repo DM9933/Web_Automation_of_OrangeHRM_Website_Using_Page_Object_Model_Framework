@@ -6,6 +6,14 @@ This project demonstrates the **Web Automation** of the **OrangeHRM** website us
 
 This project is structured to test various functionalities on the OrangeHRM website, such as login, and employee addition, by creating automated test scripts. The tests are run using TestNG, and the results are captured using **ExtentReports**, with **screenshots** taken at key points during the execution.
 
+### Clone this repository
+
+Clone the repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework.git
+```
+
 ## Features and Technologies Used
 
 - **Selenium WebDriver**: For browser automation.
