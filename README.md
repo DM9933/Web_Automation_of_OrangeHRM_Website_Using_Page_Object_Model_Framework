@@ -94,7 +94,61 @@ public class LoginPage {
 ```
 [View Login_Page.java](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/src/test/java/me/selenium/POM/pages/Login_Page.java)
 
+### Add_Employee.java
+```java
+package me.selenium.POM.tests;
 
+import me.selenium.POM.pages.EmployeePage;
+import me.selenium.POM.utilities.ExcelUtils;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class AddEmployee {
+    WebDriver driver;
+
+    @Test
+    public void addEmployeeTest() throws Exception {
+        driver = BaseDriver.getDriver();
+        ExcelUtils excel = new ExcelUtils();
+        excel.ReadExcel();
+        EmployeePage employeePage = new EmployeePage(driver);
+        employeePage.addEmployee(excel.firstName, excel.lastName, excel.employeeID);
+        // Assert employee addition success here
+    }
+}
+```
+[View Add_Employee.java](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/src/test/java/me/selenium/POM/tests/Add_Employee.java)
+
+### Employee_Page.java
+```java
+package me.selenium.POM.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class EmployeePage {
+    WebDriver driver;
+
+    By firstNameField = By.id("firstName");
+    By lastNameField = By.id("lastName");
+    By employeeIDField = By.id("employeeId");
+    By saveButton = By.id("saveBtn");
+
+    public EmployeePage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void addEmployee(String firstName, String lastName, String employeeID) {
+        driver.findElement(firstNameField).sendKeys(firstName);
+        driver.findElement(lastNameField).sendKeys(lastName);
+        driver.findElement(employeeIDField).sendKeys(employeeID);
+        driver.findElement(saveButton).click();
+    }
+}
+
+```
+[View Employee_Page.java](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/src/test/java/me/selenium/POM/pages/Employee_Page.java)
 
 ### ExcelUtils.java
 ```java
@@ -150,6 +204,9 @@ public class ExtentFactory {
 }
 ```
 [View ExtentFactory](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/src/test/java/me/selenium/POM/utilities/ExtentFactory.java)
+
+### Watch the Automation Test Video
+[![Watch the video](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 
 
