@@ -207,10 +207,10 @@ public class ExtentFactory {
 
 
 ### Test Report 
-#### OrangeHRm - Login
-![Report 1](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/reports/OrangeHRM1.png)
+#### OrangeHRm - Login Success Report
+![Login Successful Report](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/reports/OrangeHRM1.png)
 
-#### OrangeHRM - Add Employee
+#### OrangeHRM - Add Employee Success Report
 ![Report 2](https://github.com/DM9933/Web_Automation_of_OrangeHRM_Website_Using_Page_Object_Model_Framework/blob/main/reports/OrangeHRM2.png)
 
 
